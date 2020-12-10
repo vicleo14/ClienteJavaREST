@@ -106,7 +106,6 @@ public class Cliente{
         {
             // Se genera un JSON con la informacion del cliente
             String parametros = "usuario="+URLEncoder.encode(j.toJson(usuario),"UTF-8");
-            //System.out.println(parametros);
             // Se obtiene una conexion al servicio web
             HttpURLConnection conexion = conectar("alta");
             OutputStream os = conexion.getOutputStream();
@@ -116,7 +115,6 @@ public class Cliente{
                 error(conexion);
             else
                 System.out.println("HTTP "+conexion.getResponseCode()+": OK");
-
                 
             BufferedReader br = new BufferedReader(new InputStreamReader((conexion.getInputStream())));
             String respuesta;

@@ -2,13 +2,13 @@
 
 
 # Instalacion de paquetes del APT
-sudo apt update
-sudo apt install openjdk-8-jdk-headless
-sudo apt install unzip
-sudo apt install mysql-server
+#sudo apt update
+#sudo apt install openjdk-8-jdk-headless
+#sudo apt install unzip
+#sudo apt install mysql-server
 
-./tomcat.sh
-./initDB.sh
+sudo ./tomcat.sh
+sudo ./initDB.sh
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
